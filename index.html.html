@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        p {
+            margin: 0pt
+        }
+
+        @media (max-width: 900px) {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td,
+            th {
+                padding: 8px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>&lt;!DOCTYPE html&gt;&lt;**** lang=&quot;en&quot;&gt;</p>
+    <p>&lt;head&gt;</p>
+    <p>&nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+    <p>&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+    <p>&nbsp; &lt;title&gt;90-Day Discipline Challenge&lt;/title&gt;</p>
+    <p>&nbsp; &lt;style&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; body {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #f4f4f4;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 20px;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; h1 {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom: 20px;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; .envelopes {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: grid;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap: 10px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max-width: 800px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin: 0 auto;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; .envelope {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #fff;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border: 2px solid #ccc;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 20px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 10px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: pointer;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition: 0.3s;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight: bold;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; .envelope:hover {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #e0ffe0;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; .opened {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #ddd;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #888;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cursor: not-allowed;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; #quoteBox {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 20px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 1.2em;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background: #fff;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 20px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 10px;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: none;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp; &lt;/style&gt;</p>
+    <p>&lt;/head&gt;</p>
+    <p>&lt;body&gt;</p>
+    <p>&nbsp; &lt;h1&gt;90-Day Discipline Challenge&lt;/h1&gt;</p>
+    <p>&nbsp; &lt;*** class=&quot;envelopes&quot; id=&quot;envelopes&quot;&gt;&lt;/div&gt;</p>
+    <p>&nbsp; &lt;div id=&quot;quoteBox&quot;&gt;&lt;/div&gt;&nbsp; &lt;script&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; const quotes = [</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Discipline is *** ****** between goals and accomplishment.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Small steps every *** lead ** big results.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don&apos;t wait for motivation. Create it **** action.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Self-discipline is choosing what you want most over what you **** now.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;A goal without a **** is just a wish. Plan and act.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Stay focused. The journey ** **** but worth it.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Every morning ** a chance to ***** a better you.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don&rsquo;t break a ******* to yourself.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Success begins when *** ****** not ** give up.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Replace excuses with effort.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You&rsquo;re stronger than your ******* excuse.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Make progress, not perfection.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Discipline beats talent **** ****** doesn&rsquo;t work hard.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The hard **** ***** to ******* growth.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Consistency creates confidence.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;***** now. Start where *** are.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Be stubborn with **** goals and flexible with your methods.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;If it doesn&rsquo;t challenge you, it won&rsquo;t ****** you.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;**** ****** self will thank you for today&rsquo;s effort.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don&rsquo;t count *** days&mdash;make *** **** count.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action creates momentum. Start moving.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Self-respect begins **** self-discipline.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;******* is built on daily habits.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;********** turns ****** into reality.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don&rsquo;t **** failure. Fear staying the same.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;**** disciplined. Even on **** days.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;**** work compounds. Keep going.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Every day you get a choice: **** or stay the same.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You don&rsquo;t need motivation. *** **** a schedule.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Say no ** distractions, say yes ** purpose.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;********** makes you unstoppable.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Control your mind, or ** will control you.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sacrifice ***** for a better tomorrow.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Choose discomfort over regret.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Do what needs to ** done, ********** when you don&rsquo;t feel like it.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Your habits shape **** destiny.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You are what you repeatedly do.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Decide. Commit. Succeed.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Wake up with purpose, sleep with satisfaction.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You&rsquo;re building ********* great. Keep showing up.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;**** day is a brick. Lay it with care.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Push through. You&rsquo;** closer **** you think.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;********** is **** best friend on hard days.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The ****** is in *** work.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The pain of discipline is less **** the pain of regret.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You are capable of more than you know.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Progress ** quiet. Let ******* make the noise.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;** the hardest ****** ** *** room.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;******* make today easy but ******** harder.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Stay patient. Trust the process.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Fall seven times, stand up eight.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Win the morning, win *** day.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effort never lies.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Each ***** ******* matters.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Energy flows where focus goes.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;** one else *** ** your push-*** for you.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don&apos;t **** for it. Work *** it.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Discipline ** your daily gift to your future.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You either ****** the pain of discipline ** *** pain ** regret.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Let your ******* speak louder **** your words.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Tough times create ****** people.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;*** won&apos;t always be motivated, *** *** can always ** disciplined.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You&rsquo;re not tired&mdash;you&rsquo;re unchallenged.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Repetition builds mastery.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Your consistency will be your breakthrough.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;********** is a muscle&mdash;train it daily.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You didn&rsquo;t come this far ** stop now.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;*** *** *** ** anything is the way you do everything.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;** it scared. Do ** tired. Just do it.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Be ***** to your future, not your comfort.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You control *** pace. Keep moving.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Every excuse steals time from **** dream.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Train your focus. Win your day.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The **** ******* you&rsquo;ll ever work on is you.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;***** limits by building habits.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;*** comfortable being uncomfortable.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Let your hustle speak.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You were born to grow, not to stay still.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Win the ****** ** **** **** first.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Each day is a new **** for the ****** you&rsquo;re becoming.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Focus ** effort, not outcome.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;******* is hidden ** the daily grind.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You&rsquo;re not chasing perfection, you&rsquo;** chasing growth.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Your ***** need **** discipline, *** your doubts.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;*** ****** ** success: discipline and time.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Hard times reveal strong minds.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Live ***** like your dreams depend on it.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;********** is the ****** ingredient of *** success.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;What you practice today becomes who you are tomorrow.&quot;,</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Stay hungry. Stay humble. Stay disciplined.&quot;</p>
+    <p>&nbsp;&nbsp;&nbsp; ];</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp; const today = *** Date().toISOString().split(&apos;T&apos;)[0];</p>
+    <p>&nbsp;&nbsp;&nbsp; const opened = JSON.parse(localStorage.getItem(&apos;openedEnvelopes&apos;) || &apos;{}&apos;);</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp; function renderEnvelopes() {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***** container = document.getElementById(&apos;envelopes&apos;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (let i = 0; i &lt; 90; i++) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***** btn = document.createElement(&apos;div&apos;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; btn.className = &apos;envelope&apos;;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; btn.textContent = i + 1;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (opened[i]) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; btn.classList.add(&apos;opened&apos;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; btn.addEventListener(&apos;click&apos;, () =&gt; {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (opened[i]) return alert(&quot;You&apos;ve ******* opened **** envelope.&quot;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (Object.keys(opened).****** &lt; i) ****** alert(&quot;Please **** them ** order, one *** day.&quot;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (Object.values(opened).includes(today)) return alert(&quot;You ******* ****** one today. Come back tomorrow!&quot;);</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opened[i] = today;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; localStorage.setItem(&apos;openedEnvelopes&apos;, JSON.stringify(opened));</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; btn.classList.add(&apos;opened&apos;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; showQuote(quotes[i]);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; container.appendChild(btn);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp; function showQuote(quote) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***** ******** = document.getElementById(&apos;quoteBox&apos;);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; quoteBox.*********** = quote;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; quoteBox.style.display = &apos;block&apos;;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp; renderEnvelopes();</p>
+    <p>&nbsp; &lt;/script&gt;&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+    <p>&nbsp;</p>
+    <p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Convertido a HTML con WordToHTML.net</a> <span style="font-size:11px; color: #d0d0d0;">|</span> <a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">********* de firmas ** correo electr&oacute;nico</a></p>
+
+<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
+</body>
+
+</html>
